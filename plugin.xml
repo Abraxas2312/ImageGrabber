@@ -1,0 +1,20 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+            id="de.fb08.hsnr.path" version="1.0.0">
+        <name>Path</name>
+        <description>Path</description>
+        <license>Apache 2.0</license>
+        <keywords>cordova,path</keywords>
+        
+        <js-module src="www/path.js" name="path">
+            <clobbers target="navigator.path" />
+        </js-module>
+        
+        <platform name="android">
+            <config-file target="res/xml/config.xml" parent="/*">
+                <feature name="Path">
+                    <param name="android-package" value="de.fb08.hsnr.path.Path"/>
+                </feature>
+            </config-file>
+        </platform>
+    </plugin>
