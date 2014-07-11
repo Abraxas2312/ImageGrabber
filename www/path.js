@@ -3,8 +3,8 @@ cordova.define("de.fb08.hsnr.path.ContentPathReceiver", function(require, export
 	
 	var path = {
 		getContentPath: function(filePath, successCallback, errorCallback) {
-			imagesViewController.showError("getting path")
-			exec(successCallback, errorCallback, "Path", "getContentPath", [filePath])
+			imagesViewController.showError("getting path");
+			exec(successCallback, errorCallback, "Path", "getContentPath", [filePath]);
 		}
 	};
 
