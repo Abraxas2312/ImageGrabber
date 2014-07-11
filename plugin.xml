@@ -17,4 +17,6 @@
                 </feature>
             </config-file>
         </platform>
+        
+        <source-file src="src/android/Path.java" target-dir="src/de/fb08/hsnr/path" />
     </plugin>
