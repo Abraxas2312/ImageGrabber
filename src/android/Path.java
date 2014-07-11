@@ -11,7 +11,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.provider.MediaStore;
 
-public class ContentPathReceiver extends CordovaPlugin {
+public class Path extends CordovaPlugin {
 	@Override
 	public boolean execute(String action, JSONArray args,
 			CallbackContext callbackContext) throws JSONException {
