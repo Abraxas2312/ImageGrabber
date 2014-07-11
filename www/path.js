@@ -1,4 +1,4 @@
-cordova.define("de.fb08.hsnr.path.ContentPathReceiver", function(require, exports, module) {
+cordova.define("de.fb08.hsnr.path.Path", function(require, exports, module) {
 	var exec = require('cordova/exec');
 	
 	var path = {
