@@ -1,6 +1,6 @@
 var path = {
 	getContentPaths: function(successCallback, errorCallback) {
-		cordova.exec(successCallback, errorCallback, "Path", "getContentPath", []);
+		cordova.exec(successCallback, errorCallback, "Path", "getContentPaths", []);
 	}
 };
 
