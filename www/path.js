@@ -1,7 +1,6 @@
 var path = {
-	getContentPath: function(filePath, successCallback, errorCallback) {
-		imagesViewController.showError("getting path");
-		cordova.exec(successCallback, errorCallback, "Path", "getContentPath", [filePath]);
+	getContentPaths: function(successCallback, errorCallback) {
+		cordova.exec(successCallback, errorCallback, "Path", "getContentPath", []);
 	}
 };
 
