@@ -1,22 +1,22 @@
  <?xml version="1.0" encoding="UTF-8"?>
     <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-            id="de.fb08.hsnr.path" version="1.0.0">
-        <name>Path</name>
-        <description>Path</description>
+            id="de.fb08.hsnr.imageGrabber" version="1.0.0">
+        <name>ImageGrabber</name>
+        <description>Image Grabber</description>
         <license>Apache 2.0</license>
-        <keywords>cordova,path</keywords>
+        <keywords>cordova,images</keywords>
         
-        <js-module src="www/path.js" name="path">
+        <js-module src="www/image-graber.js" name="path">
             <clobbers target="navigator.path" />
         </js-module>
         
         <platform name="android">
             <config-file target="res/xml/config.xml" parent="/*">
                 <feature name="Path">
-                    <param name="android-package" value="de.fb08.hsnr.path.Path"/>
+                    <param name="android-package" value="de.fb08.hsnr.path.ImageGrabber"/>
                 </feature>
             </config-file>
         </platform>
         
-        <source-file src="src/android/Path.java" target-dir="src/de/fb08/hsnr/path" />
+        <source-file src="src/android/ImageGrabber.java" target-dir="src/de/fb08/hsnr/imageGrabber" />
     </plugin>
