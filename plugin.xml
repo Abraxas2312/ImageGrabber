@@ -6,7 +6,7 @@
         <license>Apache 2.0</license>
         <keywords>cordova,images</keywords>
         
-        <js-module src="www/image-graber.js" name="path">
+        <js-module src="www/image-grabber.js" name="path">
             <clobbers target="navigator.path" />
         </js-module>
         
