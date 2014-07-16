@@ -13,7 +13,7 @@
         <platform name="android">
             <config-file target="res/xml/config.xml" parent="/*">
                 <feature name="ImageGrabber">
-                    <param name="android-package" value="de.fb08.hsnr.ImageGrabber"/>
+                    <param name="android-package" value="de.fb08.hsnr.imageGrabber.ImageGrabber"/>
                 </feature>
             </config-file>
         </platform>
