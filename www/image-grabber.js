@@ -1,7 +1,7 @@
 var imageGrabber = {
 	getImages: function(successCallback, errorCallback) {
-		cordova.exec(successCallback, errorCallback, "Path", "getImages", []);
+		cordova.exec(successCallback, errorCallback, "ImageGrabber", "getImages", []);
 	}
 };
 
-module.exports = path;
+module.exports = imageGrabber;
