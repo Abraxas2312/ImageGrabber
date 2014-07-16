@@ -7,13 +7,13 @@
         <keywords>cordova,images</keywords>
         
         <js-module src="www/image-grabber.js" name="imageGrabber">
-            <clobbers target="navigator.path" />
+            <clobbers target="navigator.imageGrabber" />
         </js-module>
         
         <platform name="android">
             <config-file target="res/xml/config.xml" parent="/*">
-                <feature name="Path">
-                    <param name="android-package" value="de.fb08.hsnr.path.ImageGrabber"/>
+                <feature name="ImageGrabber">
+                    <param name="android-package" value="de.fb08.hsnr.ImageGrabber"/>
                 </feature>
             </config-file>
         </platform>
