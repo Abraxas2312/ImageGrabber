@@ -89,7 +89,7 @@ public class ImageGrabber extends CordovaPlugin {
 			for (int j = 0, jLen = thumbnailsCursor.getCount(); j < jLen; j++) {
 				final long thumbnailImageId = thumbnailsCursor.getLong(1);
 				if (thumbnailImageId == imageId) {
-					final int kind = thumbnailsCursor.getInt(1);
+					final int kind = thumbnailsCursor.getInt(2);
 					if (kind == MediaStore.Images.Thumbnails.MINI_KIND) {
 						miniId = thumbnailsCursor.getLong(0);
 					} else if (kind == MediaStore.Images.Thumbnails.MICRO_KIND) {
