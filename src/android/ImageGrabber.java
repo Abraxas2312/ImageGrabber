@@ -111,6 +111,7 @@ public class ImageGrabber extends CordovaPlugin {
 			image.put("orientation", orientation);
 			image.put("miniId", miniId);
 			image.put("microId", microId);
+			image.put("thumbnailPath", thumbnailsUri.toString());
 			images.put(image);
 			imagesCursor.moveToNext();
 		}
