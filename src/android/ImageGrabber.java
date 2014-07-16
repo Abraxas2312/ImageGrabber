@@ -69,12 +69,7 @@ public class ImageGrabber extends CordovaPlugin {
 				MediaStore.Images.Thumbnails._ID,
 				MediaStore.Images.Thumbnails.IMAGE_ID,
 				MediaStore.Images.Thumbnails.KIND };
-		// Where arguments for thumbnails query
-		final String[] selectionArgs = { String
-				.valueOf(MediaStore.Images.Thumbnails.MICRO_KIND) };
 		// Thumbnails query
-		// final Cursor thumbnailsCursor = contentResolver.query(thumbnailsUri,
-		// thumbnailsProjection, "kind = ?", null, null);
 		final Cursor thumbnailsCursor = contentResolver.query(thumbnailsUri,
 				thumbnailsProjection, null, null, null);
 		thumbnailsCursor.moveToFirst();
