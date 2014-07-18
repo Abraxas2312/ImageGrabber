@@ -4,7 +4,8 @@ var imageGrabber = {
 	}
 	
 	getImageData: function(imageUri, successCallback, errorCallback) {
-		cordova.exec(succesCallback, errorCallback, "ImageGrabber", "getImageData", [imageUri])
+		cordova.exec(succesCallback, errorCallback, "ImageGrabber", "getImageData", [
+			imageUri]);
 	}
 };
 
